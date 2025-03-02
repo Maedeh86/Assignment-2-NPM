@@ -1,0 +1,378 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #8B0000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: #8B0000;
+}
+
+p {
+    text-align: center;
+}
+
+.products-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buy-btn {
+    background: #FFD700;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #FFC107;
+}
+
+.hero {
+    background: linear-gradient(to right, #8B0000, #FFD700);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.luxury-btn {
+    background: #FFD700;
+    color: #8B0000;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.luxury-btn:hover {
+    background: #FFC107;
+    color: white;
+    transform: scale(1.1);
+}
+
+.about-luxury {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    color: #8B0000;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.products-page {
+    background: url('/images/face.png') no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products-page h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.about-page {
+    background: url('/images/makeup1.png') no-repeat center center/cover;
+    color: rgb(64, 6, 6);
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.about-container {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.about-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-container h1 span {
+    color: #FFD700;
+}
+
+.about-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.about-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.luxury-btn {
+    background: #FFD700;
+    color: #8B0000;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.luxury-btn:hover {
+    background: #FFC107;
+    color: white;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .product-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 45%;
+    }
+
+    .about-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .luxury-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+
+    .checkout-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .luxury-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .checkout-container {
+        padding: 20px;
+    }
+}
+
+

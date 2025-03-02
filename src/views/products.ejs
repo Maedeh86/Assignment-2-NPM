@@ -1,0 +1,23 @@
+<%- include('partials/head') %>
+<%- include('partials/navbar') %>
+
+<div class="products-page">
+    <h1>Our Luxury Makeup Collection</h1>
+    <div class="product-grid">
+        <% products.forEach(product => { %>
+            <div class="product-card">
+                <img src="<%= product.image %>" alt="<%= product.name %>">
+                <h2><%= product.name %></h2>
+                <p class="price"><%= product.price %></p>
+                <form action="/checkout" method="GET">
+                    <input type="hidden" name="name" value="<%= product.name %>">
+                    <input type="hidden" name="price" value="<%= product.price %>">
+                    <input type="hidden" name="image" value="<%= product.image %>">
+                    <button type="submit" class="buy-btn">Buy Now</button>
+                </form>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

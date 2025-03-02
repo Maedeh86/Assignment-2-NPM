@@ -1,0 +1,12 @@
+[
+    { "name": "Luxury Red Lipstick", "price": "$29.99", "image": "/images/lipstick.jpg" },
+    { "name": "Golden Glow Highlighter", "price": "$35.99", "image": "/images/highlighter.png" },
+    { "name": "Velvet Matte Foundation", "price": "$42.99", "image": "/images/Foundation.jpg" },
+    { "name": "Silk Touch Blush", "price": "$24.99", "image": "/images/SilkBlush.png" },
+    { "name": "Diamond Shine Lip Gloss", "price": "$19.99", "image": "/images/lipstick1.jpg" },
+    { "name": "Luxury Eye Shadow Palette", "price": "$49.99", "image": "/images/eyeshadow.jpg" },
+    { "name": "24K Gold Serum", "price": "$59.99", "image": "/images/FinishPowder.jpg" },
+    { "name": "Royal Mascara", "price": "$27.99", "image": "/images/mascara.png" },
+    { "name": "Ultimate Contour Kit", "price": "$39.99", "image": "/images/contourKit.jpg" },
+    { "name": "Silk Finish Setting Powder", "price": "$31.99", "image": "/images/kkkk.jpg" }
+]
